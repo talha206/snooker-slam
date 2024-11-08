@@ -24,8 +24,8 @@ const Mysvg=()=>{
 </svg>
 </View>
   );
-};
-
+};  //my line svg icon
+//DATE SECTION WHICH INCLUDES LIVE ICON CALENDER ICON AND DATE SECTION
 const DateNavigator = () => {
   const { isMedium } = useScreenSize();
   const { isSmall } = useScreenSize();
@@ -82,6 +82,8 @@ const DateNavigator = () => {
     );
   };
 
+
+  //HEARER FUNCTION WHICH IS THE MAIN FUNCTION IN WHICH I AM ADDING MY DATE SECTION AND ALSO THE SECTION ABOVE IT 
 const Header = () => {
   const { isSmall } = useScreenSize();
   const iconSize = width>375 ? 24 : 18;
@@ -106,7 +108,7 @@ const Header = () => {
     </View>
   );
 };
-
+//THSI IS MY STYLE ARE WERE I AM ADDING MY STYLES CSS 
 const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
