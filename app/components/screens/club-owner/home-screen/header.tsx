@@ -1,11 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet,TouchableOpacity,Dimensions } from 'react-native';
- 
-// eslint-disable-next-line import/no-unresolved
+ // eslint-disable-next-line import/no-unresolved
 import Icon from 'react-native-vector-icons/Ionicons';
 import useScreenSize from '@/hooks/useScreenSize';
-import { LinearGradient } from 'expo-linear-gradient';
- 
+  
 
 const { width } = Dimensions.get('window');
 
@@ -50,14 +48,12 @@ const DateNavigator = () => {
          </TouchableOpacity>
         
         <View style={[styles.dateItems, isMedium && styles.mediumdateItems]}>
-          {/* LIVE Date */}
-          
+           
           
           <Text style={[styles.dateText, isSmall&& styles.smalldateText]} >September</Text> 
           <View style={styles.dateline}><Mysvg /></View>
-          {/* <LinearGradient colors={['rgba(0, 0, 0, 0)', 'rgba(181, 0, 0, 0.35)']} style={styles.linearGradient}> */}
-          <Text style={[styles.dateTextActive, isSmall&& styles.smalldateTextActive]}>Octuber</Text>
-          {/* </LinearGradient> */}
+           <Text style={[styles.dateTextActive, isSmall&& styles.smalldateTextActive]}>Octuber</Text>
+          
          
           <View style={styles.dateline}><Mysvg/></View>
           
@@ -112,12 +108,6 @@ const Header = () => {
 };
 
 const styles = StyleSheet.create({
-  linearGradient: {
-    flex: 3,
-    // paddingLeft: 15,
-    // paddingRight: 15,
-    
-  },
   headerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -163,11 +153,11 @@ const styles = StyleSheet.create({
   datesection:{
     flexDirection:'row',
     justifyContent:'space-between',
-    // width:'20%',
+    
     paddingTop:width> 340? 20:13,
-    borderWidth: 2,               // Sets the width of the border
-    borderColor: '#353535',           // Sets the color of the border
-    borderRadius:width>320? 20:17,              // Rounds the corners of the border
+    borderWidth: 2,                
+    borderColor: '#353535',            
+    borderRadius:width>320? 20:17,             
     borderStyle: 'solid',  
   },
   smalldatesection:{
@@ -189,7 +179,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap:20,
-    // marginHorizontal:'10%',
+   
   },
   mediumdateItems:{
     gap:width> 375? 10:7,
@@ -224,12 +214,12 @@ const styles = StyleSheet.create({
   },
   dateTextActive: {
     color: '#fff',
-    // marginRight: 20,
+    
     paddingBottom:width>340?20:13,
     fontSize:width> 410? 14:12,
     fontWeight: 'bold',
-    // borderBottomColor:'red',
-    // borderBottomWidth:3,
+    
+    
     zIndex:10,
     
   },
